@@ -1,6 +1,7 @@
-// app/api/chat/route.js
 import OpenAI from 'openai';
 import { projectFaq } from '../../data/faq';
+
+export const runtime = 'edge'; // optional, but helps clarify
 
 const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
