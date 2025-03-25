@@ -1,6 +1,9 @@
 import OpenAI from 'openai';
 import { projectFaq } from '@/data/faq';
 
+
+export const dynamic = 'force-dynamic'; // ✅ 캐싱 방지
+
 const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
     baseURL: 'https://openrouter.ai/api/v1',
