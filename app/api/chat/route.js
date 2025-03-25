@@ -11,7 +11,6 @@ function formatFaq(faq) {
     return faq.map(item => `Q: ${item.question}\nA: ${item.answer}`).join('\n\n');
 }
 
-// ✅ CORS 프리플라이트 요청 처리
 export async function OPTIONS() {
     return new Response(null, {
         status: 204,
