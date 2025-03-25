@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 const GPTChat = () => {
     const [input, setInput] = useState('');
@@ -20,14 +20,15 @@ const GPTChat = () => {
         e.preventDefault();
         if (!input.trim()) return;
 
-        const newMessage = { role: 'user', content: input };
-        setMessages((prev) => [...prev, newMessage, { role: 'assistant', content: '' }]);
+        const newMessage = {role: 'user', content: input};
+        setMessages((prev) => [...prev, newMessage, {role: 'assistant', content: ''}]);
         setInput('');
         setIsLoading(true);
 
         const response = await fetch('/api/chat', {
             method: 'POST',
             headers: {
+                'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
@@ -48,13 +49,13 @@ const GPTChat = () => {
         let done = false;
 
         while (!done) {
-            const { value, done: doneReading } = await reader.read();
+            const {value, done: doneReading} = await reader.read();
             done = doneReading;
             result += decoder.decode(value);
 
             setMessages((prev) => {
                 const updated = [...prev];
-                updated[updated.length - 1] = { role: 'assistant', content: result };
+                updated[updated.length - 1] = {role: 'assistant', content: result};
                 return updated;
             });
         }
