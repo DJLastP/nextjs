@@ -1,7 +1,5 @@
 import OpenAI from 'openai';
-import { projectFaq } from '../../data/faq';
-
-// export const runtime = 'edge'; // optional, but helps clarify
+import { projectFaq } from '@/data/faq.js';
 
 const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,

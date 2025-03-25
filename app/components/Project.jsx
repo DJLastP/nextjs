@@ -1,7 +1,7 @@
 "use client";
 import React, {useState} from 'react';
 import ProjectModal from "./ProjectModal.jsx";
-import { projects } from '../data/projects'; // 절대경로 사용시 jsconfig.json 설정 필요
+import { projects } from '@/data/projects'; // 절대경로 사용시 jsconfig.json 설정 필요
 
 const Project = () => {
 
