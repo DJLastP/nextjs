@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <section>
             <h2 className={'text-3xl font-bold mb-6'}>Contact</h2>
-            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 min-h-72'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 min-h-72 mb-6'}>
                 <div className={'min-h-72'}>
                     <GPTChat />
                 </div>
