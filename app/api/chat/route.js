@@ -10,17 +10,6 @@ function formatFaq(faq) {
     return faq.map(item => `Q: ${item.question}\nA: ${item.answer}`).join('\n\n');
 }
 
-export async function OPTIONS() {
-    return new Response(null, {
-        status: 204,
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'POST, OPTIONS',
-            'Access-Control-Allow-Headers': 'Content-Type',
-        },
-    });
-}
-
 // ✅ POST 요청 처리
 export async function POST(req) {
     try {
