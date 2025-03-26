@@ -10,11 +10,6 @@ function formatFaq(faq) {
     return faq.map(item => `Q: ${item.question}\nA: ${item.answer}`).join('\n\n');
 }
 
-export async function GET() {
-    return new Response('테스트 GET 성공', { status: 200 });
-}
-
-// ✅ POST 요청 처리
 export async function POST(req) {
     try {
         const { messages } = await req.json();

@@ -12,10 +12,10 @@ export default function Page() {
         <Header />
         <main className="container max-w-4xl mx-auto px-6 py-12">
           <Home />
-          <Contact />
           <About />
           <Skill />
           <Project />
+          <Contact />
         </main>
         <Footer />
       </div>
