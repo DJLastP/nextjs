@@ -24,7 +24,7 @@ const Contact = () => {
                         <FontAwesomeIcon icon={faCommentSms} />
                         <span>카카오톡</span>
                     </a>
-                    <a href={'@/files/resume-jobkorea.pdf'} download className={'flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors'}>
+                    <a href={'/files/resume-jobkorea.pdf'} download className={'flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors'}>
                         <FontAwesomeIcon icon={faCommentSms} />
                         <span>이력서 (잡코리아양식)</span>
                     </a>
