@@ -25,7 +25,7 @@ export const dbAndAIList = [
     { name: 'MySQL', icon: '/assets/mysql.png', colorClass: 'text-blue-500' },
     { name: 'MariaDB', icon: '/assets/maria.png', colorClass: 'text-blue-500' },
     { name: 'MongoDB', icon: '/assets/mongo.png', colorClass: 'text-blue-500' },
-    { name: 'OpenSearch', icon: '/assets/OpenSearch.svg', colorClass: 'text-blue-500' },
+    { name: 'OpenSearch', icon: '/assets/opensearch.svg', colorClass: 'text-blue-500' },
     { name: 'TensorFlow', icon: '/assets/tensorflow.png', colorClass: 'text-blue-500' },
     { name: 'Pandas', icon: '/assets/pandas.png', colorClass: 'text-blue-500' },
     { name: 'OpenAI', icon: '/assets/openai.png', colorClass: 'text-blue-500' },
