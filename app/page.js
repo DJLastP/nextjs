@@ -5,6 +5,7 @@ import About from "@/app/components/About";
 import Skill from "@/app/components/Skill";
 import Project from "@/app/components/Project";
 import Header from "@/app/components/Header";
+import {dbAndAIList, frameworkList, skillList} from "@/data/skills";
 
 export default function Page() {
   return (
@@ -13,7 +14,9 @@ export default function Page() {
         <main className="container max-w-4xl mx-auto px-6 py-12">
           <Home />
           <About />
-          <Skill />
+          <Skill skillList={skillList} title={'Skill'} />
+          <Skill skillList={frameworkList} title={'Framework'} />
+          <Skill skillList={dbAndAIList} title={'DataBase & AI'} />
           <Project />
           <Contact />
         </main>
