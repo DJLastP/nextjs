@@ -2,7 +2,7 @@ import "./globals.css";
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import {GoogleTagManager} from "@next/third-parties/google";
+import {GoogleAnalytics, GoogleTagManager} from "@next/third-parties/google";
 config.autoAddCss = false
 
 export const metadata = {
@@ -24,7 +24,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-    <GoogleTagManager gtmId="G-00RT0Z77QT" />
+    <GoogleTagManager gtmId="G-V95031MM33" />
+    <GoogleAnalytics gaId="G-V95031MM33" /> {/* GA4 ID 입력 */}
     <body
       >
         {children}

@@ -7,6 +7,7 @@ import Project from "@/app/components/Project";
 import Header from "@/app/components/Header";
 import {dbAndAIList, frameworkList, skillList} from "@/data/skills";
 
+
 export default function Page() {
   return (
       <div className="bg-white dark:bg-gray-900 text-black dark:text-white   min-h-screen transition-colors duration-300">
