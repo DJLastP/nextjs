@@ -24,8 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-    {/*<GoogleTagManager gtmId="G-V95031MM33" />*/}
-    <GoogleAnalytics gaId="G-V95031MM33" /> {/* GA4 ID 입력 */}
+    <GoogleAnalytics gaId="G-5JJPJXCW7V" /> {/* GA4 ID 입력 */}
     <body
       >
         {children}
