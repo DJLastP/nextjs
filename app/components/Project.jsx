@@ -46,7 +46,6 @@ const Project = () => {
             </section>
             <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)}/>
         </>
-
     );
 };
 

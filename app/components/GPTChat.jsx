@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 const GPTChat = () => {
     const [input, setInput] = useState('');
@@ -20,8 +20,8 @@ const GPTChat = () => {
         e.preventDefault();
         if (!input.trim()) return;
 
-        const newMessage = { role: 'user', content: input };
-        setMessages((prev) => [...prev, newMessage, { role: 'assistant', content: '' }]);
+        const newMessage = {role: 'user', content: input};
+        setMessages((prev) => [...prev, newMessage, {role: 'assistant', content: ''}]);
         setInput('');
         setIsLoading(true);
 
@@ -50,13 +50,13 @@ const GPTChat = () => {
         let done = false;
 
         while (!done) {
-            const { value, done: doneReading } = await reader.read();
+            const {value, done: doneReading} = await reader.read();
             done = doneReading;
             result += decoder.decode(value);
 
             setMessages((prev) => {
                 const updated = [...prev];
-                updated[updated.length - 1] = { role: 'assistant', content: result };
+                updated[updated.length - 1] = {role: 'assistant', content: result};
                 return updated;
             });
         }
@@ -77,22 +77,22 @@ const GPTChat = () => {
                     <div key={i} className={`${msg.role === 'user' ? 'text-right' : 'text-left'}`}>
                         <p
                             className={`inline-block px-3 py-2 rounded-md whitespace-pre-line
-              ${
+                                ${
                                 msg.role === 'user'
                                     ? 'bg-blue-100 dark:bg-blue-600 text-blue-900 dark:text-blue-100'
                                     : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100'
                             }
-            `}
+                            `}
                         >
                             {msg.content}
                         </p>
                     </div>
-                ))}
+                ))
+                }
                 {isLoading && (
                     <p className="text-left text-gray-500 italic whitespace-pre-line">응답 생성 중...</p>
                 )}
             </div>
-
             {/* 입력 영역 */}
             <form onSubmit={handleSubmit} className="flex gap-2 pt-2">
                 <input
