@@ -1,8 +1,9 @@
 import "./globals.css";
 
-import { config } from '@fortawesome/fontawesome-svg-core'
+import {config} from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import {GoogleAnalytics, GoogleTagManager} from "@next/third-parties/google";
+import {GoogleAnalytics} from "@next/third-parties/google";
+
 config.autoAddCss = false
 
 export const metadata = {
@@ -21,14 +22,13 @@ export const metadata = {
     },
 };
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="ko">
-    <GoogleAnalytics gaId="G-5JJPJXCW7V" /> {/* GA4 ID 입력 */}
-    <body
-      >
-        {children}
-      </body>
-    </html>
-  );
+export default function RootLayout({children}) {
+    return (
+        <html lang="ko">
+            <GoogleAnalytics gaId="G-5JJPJXCW7V"/> {/* GA4 ID 입력 */}
+            <body>
+                {children}
+            </body>
+        </html>
+    );
 }

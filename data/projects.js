@@ -1,5 +1,18 @@
    export const projects = [
-        {
+       {
+           name: '태국어 학습앱',
+           image: '/assets/thaistudy.png',
+           stack: ['Flutter', 'MySQL', 'OracleCloud'],
+           role: '개발 및 배포 운영',
+           environment: 'OracleCloud + Nginx + MySQL',
+           period: '1개월',
+           features: [
+               '태국어 글자 따라쓰기 및 단어 문장 학습 앱',
+               '태국어글자 학습앱'
+           ],
+           link: 'https://play.google.com/store/apps/details?id=com.thkrapp.thailearning'
+       },
+       {
             name: '다모아 울산',
             image: '/assets/damoa.png',
             description: '',
