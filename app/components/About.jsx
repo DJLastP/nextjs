@@ -11,10 +11,10 @@ const About = () => {
                             교육 및 활동
                         </h3>
                         <ul className={'text-gray-800 dark:text-gray-300 leading-relaxed'}>
-                            <li> ~2025 (주)두리누리 개발팀 </li>
-                            <li> 2024 정보통신전문학사 / 평생교육진흥원 </li>
+                            <li> ~2026 (주)스토리 개발팀 </li>
+                            <li> 2025 (주)EAM 솔루션 개발팀 </li>
+                            <li> 2023 ~ 2025 (주)두리누리 개발팀 </li>
                             <li> 2023 ATech 솔루션 개발팀 </li>
-                            <li> 2023 빅데이터 시각화 웹 서비스 개발자 양성과정 </li>
                         </ul>
                     </article>
                     <article className={'bg-gray-100 dark:bg-gray-800 shadow-md p-6 rounded-lg hover:scale-105 transition-transform duration-300'}>
